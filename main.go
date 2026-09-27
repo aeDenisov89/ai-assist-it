@@ -6,11 +6,24 @@ import (
 
 	"api-doc-example/internal/handlers"
 
+	_ "api-doc-example/docs"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	httpSwagger "github.com/swaggo/http-swagger/v2"
 )
 
+// @title           Todo API
+// @version         1.0
+// @description     REST API для управления пользователями и задачами
+// @termsOfService  http://swagger.io/terms/
+
+// @contact.name   API Support
+// @contact.email  support@example.com
+
+// @license.name  MIT
+// @license.url   https://opensource.org/licenses/MIT
+
+// @host      localhost:8080
 func main() {
 	r := chi.NewRouter()
 
